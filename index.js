@@ -22,14 +22,12 @@ class App extends React.Component {
             })
         })
         
-        chatManager.connect()
-        .then(currentUser => {
+        chatManager.connect().then(currentUser => {
             this.currentUser = currentUser
             this.currentUser.subscribeToRoom({
             roomId: roomId,
             hooks: {
                 onNewMessage: message => {
-
                     this.setState({
                         messages: [...this.state.messages, message]
                     })
