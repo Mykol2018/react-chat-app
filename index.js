@@ -1,8 +1,8 @@
 /*Replace these with your own API keys, username and roomId from Chatkit  */
-const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/dfaf1e22-2d33-45c9-b4f8-31f634621d24/token"
-const instanceLocator = "v1:us1:dfaf1e22-2d33-45c9-b4f8-31f634621d24"
-const roomId = 9806194
-const username = 'perborgen'
+const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/934193f2-ca82-4751-82d9-f742d621de1d/token"
+const instanceLocator = "v1:us1:934193f2-ca82-4751-82d9-f742d621de1d"
+const roomId = 19386829
+const username = 'mykol2019'
 
 class App extends React.Component {
     constructor() {
@@ -16,7 +16,7 @@ class App extends React.Component {
     componentDidMount() {
         const chatManager = new Chatkit.ChatManager({
             instanceLocator: instanceLocator,
-            userId: 'janedoe',
+            userId: 'MiUsuario',
             tokenProvider: new Chatkit.TokenProvider({
                 url: testToken
             })
@@ -109,7 +109,7 @@ class SendMessageForm extends React.Component {
                 <input
                     onChange={this.handleChange}
                     value={this.state.message}
-                    placeholder="Type your message and hit ENTER"
+                    placeholder="Escribi tu mensaje y presiona ENTRADA"
                     type="text" />
             </form>
         )
@@ -117,7 +117,7 @@ class SendMessageForm extends React.Component {
 }
 
 function Title() {
-  return <p className="title">My awesome chat app</p>
+  return <p className="title">React JS Chat App with ChatKit</p>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
