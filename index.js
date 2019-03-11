@@ -4,11 +4,22 @@ const instanceLocator = "v1:us1:934193f2-ca82-4751-82d9-f742d621de1d"
 const roomId = 19386829
 const username = "mykol2019"
 
+const DUMMY_DATA = [
+  {
+    senderId: "mykol2019",
+    text: "hola?"
+  },
+  {
+    senderId: "juan",
+    text: "que tal?"
+  }
+]
+
 class App extends React.Component {
     constructor() {
         super()
         this.state = {
-            messages: []
+             messages: DUMMY_DATA
         }
         this.sendMessage = this.sendMessage.bind(this)
     } 
