@@ -1,4 +1,4 @@
-/*Replace these with your own API keys, username and roomId from Chatkit  */
+/* API keys, username and roomId from Chatkit  */
 const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/934193f2-ca82-4751-82d9-f742d621de1d/token"
 const instanceLocator = "v1:us1:934193f2-ca82-4751-82d9-f742d621de1d"
 const roomId = 19386829
